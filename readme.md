@@ -36,6 +36,7 @@ cb(null, file.fieldname + '-' + uniquePrefix + file.originalname);
 ```
 const upload = multer({ storage: storage });
 ```
+
 ## Step 4: Use Upload Middleware in Route Handler
 
 ```
