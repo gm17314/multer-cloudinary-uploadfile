@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" multiple>
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        <% for (let image of fileUrl){ %>
+            <img src="<%= image %>" alt="" width="200px" height="200px">
+            <% } %>
+    </div>
+</body>
+
+</html>
